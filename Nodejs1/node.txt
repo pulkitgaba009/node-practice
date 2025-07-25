@@ -1,0 +1,52 @@
+Node js:-
+Javascript runtime enviornment 
+it is used for server side programming
+
+Node.js is not a language,liberary or framework
+
+
+Node REPL (Read Evauate Print Loop) :-
+.help gives us commands
+
+It has a special object named 'GLOBAL' 
+
+
+
+Process : This object provides information about , and control over,the current Node.js process.
+process.argv : returns an array containing the command-line arguments passed when the node.js process was launched
+>> node
+>> process
+
+
+
+MODULE.EXPORTS : requiring files
+require() : a built in function to include external modules that exists in seperate files
+module.exports : a special object
+
+
+
+NPM (Node Package Manager)
+npm is standard package for Node.js
+it is library of package
+it is a command line tool
+
+
+Installing Packages
+npm install <- package name ->
+
+node_modules : the node_modules folder contains every installed dependency for your projrct.
+
+package-lock jason : it records the ec=xact version of every installed  dependency including it sub dependencies and their versions.
+
+>> npm init -y
+package.json : the package.json file contains descriptive and functional metadata about a project ,such as a name,version and dependencies
+
+npm install -g <- package name -> : to install globally
+npm link <- package link 
+
+
+REQUIRE V/S IMPORT
+import {sum} from "./math.js"
+
+we can't selectively load only the pieces we need with require but with import ,we can selectively load only the pieces we need , which can save memory.
+Loading is synchronous for 'require' but can be asynchronous for import
