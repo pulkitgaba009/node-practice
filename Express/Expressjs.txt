@@ -1,0 +1,26 @@
+Liberary vs Framework
+
+Library : A library is a collection of pre-written code that can be used to perdorm specific task.
+eg : axios
+
+Framework : A framwork is a set of pre-writtencode that provides a structure for developing software applications.
+eg : express
+
+
+
+EXPRESS : it a node js framework that helps us to make web applications .
+It is used for serverside programming
+1) listens for incoming requests
+2) Parse
+3) Matches response with route
+4) Send suitable response
+
+Ports : are the logical end points of a network connection that is used to exchange information between a web server and the web client
+
+console.log(req) : Useful properties
+
+response.send() : used to send response for http protocol
+
+
+
+Routing : it is a process of selecting a path for trafic in a network or between or across multiple networks.
