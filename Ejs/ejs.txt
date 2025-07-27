@@ -1,0 +1,10 @@
+TEMPLATING
+(EJS) : Embedded YavaScript templates
+EJS is a simple language that lets you generate HTML markup with plain JavaScript
+
+
+
+Interpolation Syntax
+Interpolation refers to embedding expressions into marked up text
+Control flow with <%  %>
+Escaped output with <%= %>
