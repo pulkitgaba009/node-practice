@@ -4,7 +4,9 @@ const path = require("path");
 
 const port = 3000;
 
-// Middleware to use post request
+// Middleware to use post request's data
+app.use(express.urlencoded({extended:true}))
+app.use(express.json)
 
 
 app.get("/", (req, res) => {
