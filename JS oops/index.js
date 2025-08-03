@@ -85,19 +85,26 @@ class Person {
   }
 }
 
-class Students {
+class Student extends Person {
   constructor(name, age, marks) {
+    super(name, age); // Call the parent class constructor
     this.marks = marks;
   }
 }
 
-class Teacher {
-  constructor(name, age, marks) {
-    this.name = name;
-    this.age = age;
-    this.marks = marks;
+class Teacher extends Person {
+  constructor(name, age, subject) {
+    super(name, age); // Call the parent class constructor
+    this.subject = subject;
   }
+
   talk() {
-    console.log(`Hi I am ${this.n}`);
+    console.log(`Hi I am ${this.name}, and I teach ${this.subject}`);
   }
 }
+
+let s1 = new Student("Pulkit", 18, 92);
+let t1 = new Teacher("Noopur", 30, "AI");
+
+s1.talk(); // Hi my name is Pulkit
+t1.talk(); // Hi I am Noopur, and I teach AI
