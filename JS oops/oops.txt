@@ -1,0 +1,23 @@
+* OBJECT ORIENTED PROGRAMMING : reduces redundancy and memory efficeient program
+- To structure the code
+. prototypes
+. new operators
+. constructors
+. classes
+. keywords
+
+
+* OBJECT PROTOTYPE : Prototypes are the mechanism by which JavaScript objects inherit features from one another.
+It is like a simgle template objects that inherit methods and properties from without having their own copies.
+-arr._proto_(reference)
+-Array.prototype(actual object)
+-String.prototype
+
+* FACTORY FUNCTIONS : A function that creates objects
+
+* NEW OPERATOR : The new operator lets developers create an instance of a user-defines object type or of one of the built in objects types that has contructor function
+
+* CLASSES : these are blueprints for object it tells structure to store data 
+
+* INHERITANCE : Inheritance is a mechanism that allows us to create new classes on the basis of already existing class.
+
