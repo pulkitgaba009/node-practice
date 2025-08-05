@@ -8,11 +8,34 @@ const port = 8080;
 
 app.set("view engine","ejs");
 app.set("views",path.join(__dirname,"views"));
-app.set(express.static(path.join(__dirname,"public")));
+app.use(express.static(path.join(__dirname,"public")));
 
-app.use((req,res)=>{
-    res.send("wtf")
+app.get("/",(req,res)=>{
+    res.send("wtf");
 })
+
+// dummy data
+let posts = [
+    {
+        userName:"pulkitgaba0009",
+        content:"I love coding"
+    },
+    {
+        userName:"raju",
+        content:"I love cricket"
+    },
+    {
+        userName:"aussss",
+        content:"I love basketball"
+    }
+]
+
+// Get route
+app.get("/posts",(req,res)=>{
+    res.render("index.ejs",{posts})
+})
+
+
 
 app.listen(port,()=>{
     console.log(`App is working ${port}`);
