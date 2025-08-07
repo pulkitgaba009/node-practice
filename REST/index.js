@@ -4,6 +4,8 @@ const path = require("path");
 const app = express();
 app.use(express.urlencoded({extended:true}))
 
+const { v4: uuidv4 } = require('uuid');
+
 const port = 8080;
 
 app.set("view engine","ejs");
@@ -17,14 +19,17 @@ app.get("/",(req,res)=>{
 // dummy data
 let posts = [
     {
+        id:uuidv4(),
         userName:"pulkitgaba0009",
         content:"I love coding"
     },
     {
+        id:uuidv4(),
         userName:"raju",
         content:"I love cricket"
     },
     {
+        id:uuidv4(),
         userName:"aussss",
         content:"I love basketball"
     }
@@ -48,7 +53,12 @@ app.post("/posts",(req,res)=>{
     res.redirect("/posts");
 })
 
-
+//Get by id
+app.get("/post/:id",(req,res)=>{
+    let {id} = req.params;
+    let post = posts.find((id)=>id===path.id);
+    console.log(post);
+})
 
 app.listen(port,()=>{
     console.log(`App is working ${port}`);
