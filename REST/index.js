@@ -57,7 +57,7 @@ app.post("/posts",(req,res)=>{
 app.get("/post/:id",(req,res)=>{
     let {id} = req.params;
     let post = posts.find((id)=>id===path.id);
-    console.log(post);
+    res.render("show.ejs",{post});
 })
 
 app.listen(port,()=>{
